@@ -1,0 +1,8 @@
+D:\Accessories-CuongVD\Accessories\App.Model\bin\Debug\netcoreapp2.2\App.Model.deps.json
+D:\Accessories-CuongVD\Accessories\App.Model\bin\Debug\netcoreapp2.2\App.Model.dll
+D:\Accessories-CuongVD\Accessories\App.Model\bin\Debug\netcoreapp2.2\App.Model.pdb
+D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.csproj.CoreCompileInputs.cache
+D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.AssemblyInfoInputs.cache
+D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.AssemblyInfo.cs
+D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.dll
+D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.pdb

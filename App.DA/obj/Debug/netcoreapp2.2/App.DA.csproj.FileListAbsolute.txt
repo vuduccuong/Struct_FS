@@ -1,0 +1,16 @@
+D:\Accessories-CuongVD\Accessories\App.DA\obj\Debug\netcoreapp2.2\App.DA.csprojAssemblyReference.cache
+D:\Accessories-CuongVD\Accessories\App.DA\obj\Debug\netcoreapp2.2\App.DA.csproj.CoreCompileInputs.cache
+D:\Accessories-CuongVD\Accessories\App.DA\obj\Debug\netcoreapp2.2\App.DA.AssemblyInfoInputs.cache
+D:\Accessories-CuongVD\Accessories\App.DA\obj\Debug\netcoreapp2.2\App.DA.AssemblyInfo.cs
+D:\Accessories-CuongVD\Accessories\App.DA\bin\Debug\netcoreapp2.2\App.DA.deps.json
+D:\Accessories-CuongVD\Accessories\App.DA\bin\Debug\netcoreapp2.2\App.DA.dll
+D:\Accessories-CuongVD\Accessories\App.DA\bin\Debug\netcoreapp2.2\App.DA.pdb
+D:\Accessories-CuongVD\Accessories\App.DA\bin\Debug\netcoreapp2.2\App.Base.dll
+D:\Accessories-CuongVD\Accessories\App.DA\bin\Debug\netcoreapp2.2\App.Model.dll
+D:\Accessories-CuongVD\Accessories\App.DA\bin\Debug\netcoreapp2.2\App.Utils.dll
+D:\Accessories-CuongVD\Accessories\App.DA\bin\Debug\netcoreapp2.2\App.Utils.pdb
+D:\Accessories-CuongVD\Accessories\App.DA\bin\Debug\netcoreapp2.2\App.Base.pdb
+D:\Accessories-CuongVD\Accessories\App.DA\bin\Debug\netcoreapp2.2\App.Model.pdb
+D:\Accessories-CuongVD\Accessories\App.DA\obj\Debug\netcoreapp2.2\App.DA.csproj.CopyComplete
+D:\Accessories-CuongVD\Accessories\App.DA\obj\Debug\netcoreapp2.2\App.DA.dll
+D:\Accessories-CuongVD\Accessories\App.DA\obj\Debug\netcoreapp2.2\App.DA.pdb
