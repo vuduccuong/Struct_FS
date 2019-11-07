@@ -8,3 +8,4 @@ D:\Accessories-CuongVD\Accessories\App.Base\obj\Debug\netcoreapp2.2\App.Base.dll
 D:\Accessories-CuongVD\Accessories\App.Base\obj\Debug\netcoreapp2.2\App.Base.pdb
 D:\Accessories-CuongVD\Accessories\App.Base\bin\Debug\netcoreapp2.2\App.Base.runtimeconfig.json
 D:\Accessories-CuongVD\Accessories\App.Base\bin\Debug\netcoreapp2.2\App.Base.runtimeconfig.dev.json
+D:\Accessories-CuongVD\Accessories\App.Base\obj\Debug\netcoreapp2.2\App.Base.csprojAssemblyReference.cache

@@ -6,3 +6,4 @@ D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.A
 D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.AssemblyInfo.cs
 D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.dll
 D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.pdb
+D:\Accessories-CuongVD\Accessories\App.Model\obj\Debug\netcoreapp2.2\App.Model.csprojAssemblyReference.cache

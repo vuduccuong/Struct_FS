@@ -35,7 +35,7 @@ namespace App.Api
 
             services.AddScoped<ProductImplement>();
 
-
+            services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -53,6 +53,9 @@ namespace App.Api
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(
+                options => options.WithOrigins("http://example.com").AllowAnyMethod()
+            );
             app.UseMvc();
         }
     }

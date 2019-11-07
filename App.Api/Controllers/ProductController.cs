@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using App.Base.MyAppModel;
 using App.DA.Product;
+using App.Model.Product;
 using App.Utils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +12,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace App.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/product")]
     [ApiController]
     public class ProductController : Controller
     {
@@ -26,11 +28,22 @@ namespace App.Api.Controllers
         }
         #endregion
 
-        [HttpGet,Route("getname")]
+        [HttpGet,Route("get-name")]
         public string GetName()
         {
             var modal = _product.GetNameAuthor();
             return modal;
+        }
+
+        [HttpPost, Route("get-product")]
+        public IActionResult GetProducts(int PageIndex, int PageSize)
+        {
+            var modal = _product.GetPagingItems(PageIndex, PageSize);
+            return Json(new
+            {
+                data = modal,
+                errors = false
+            });
         }
     }
 }
