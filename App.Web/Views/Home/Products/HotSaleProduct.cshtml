@@ -1,0 +1,22 @@
+﻿@using App.Utils.Common
+@model IEnumerable<App.Model.Product.ProductItem>
+@foreach(var product in Model)
+{
+    <div class="site-blocks-cover aos-init aos-animate" data-aos="fade">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-center">
+                    <div class="featured-hero-product w-100">
+                        <h1 class="mb-2">@product.NameProduct</h1>
+                        <h4>@product.LabelID</h4>
+                        <div class="price mt-3 mb-5"><strong>@Utils.FormatPrice(@product.ProductDetails.FirstOrDefault().PriceOnline)đ</strong> <del>@Utils.FormatPrice(@product.ProductDetails.FirstOrDefault().Price)đ</del></div>
+                        <p><a style="cursor: pointer" toscroll="#st-product" class="btn btn-outline-primary rounded-0">Xem thêm</a> <a href="/@product.NameAscii" class="btn btn-primary rounded-0">Mua ngay</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-7 align-self-end text-center text-lg-right">
+                    <img src="~/Front/images/new/person_transparent.png" alt="Image" class="img-fluid img-1">
+                </div>
+            </div>
+        </div>
+    </div>
+}

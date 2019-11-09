@@ -1,0 +1,15 @@
+﻿@using App.Utils.Extensions
+@model IEnumerable<App.Model.Menu.MenuItem>
+@if (Model.Count() > 0)
+{
+    <ul class="site-menu js-clone-nav d-none d-lg-block">
+        @foreach (var item in Model)
+        {
+        <li>
+            <a href="@item.UrlString">@item.NameCategory</a>
+            @*@Html.Action("GetMenu", "Home", new { parentID = item.ID })*@
+        </li>
+            
+        }
+    </ul>
+}

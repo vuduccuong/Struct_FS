@@ -3,8 +3,10 @@ using App.Model;
 using App.Model.Product;
 using App.Utils.Extensions;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 
 namespace App.DA.Product
 {
@@ -19,7 +21,12 @@ namespace App.DA.Product
             return "Vũ Đức Cường";
         }
 
-
+        public IEnumerable<ProductDetailItem> GetProductDetailByID(int productID)
+        {
+            return LoadStoredProc("[dbo].[Get_ProductDetail_ByID]")
+                .WithSqlParam("@productID", productID)
+                .ExecuteStoredProc<ProductDetailItem>();
+        }
         public PagingItems<ProductItem> GetPagingItems(int PageIndex, int PageSize)
         {
             var paramTotal = new SqlParameter
@@ -36,6 +43,19 @@ namespace App.DA.Product
                 .ExecuteStoredProc<ProductItem>();
 
             var totalRecord = Convert.ToInt32(paramTotal.Value);
+            if (ListProduct != null && ListProduct.Count > 0)
+            {
+                foreach (var product in ListProduct)
+                {
+                    var detail = GetProductDetailByID(product.ID);
+                    var listdetail = new List<ProductDetailItem>
+                    {
+                        detail.FirstOrDefault()
+                    };
+                    product.ProductDetails = listdetail;
+                }
+            }
+
             return new PagingItems<ProductItem>()
             {
                 ListItems = ListProduct,
@@ -45,5 +65,34 @@ namespace App.DA.Product
                 RecordPerPage = PageSize
             };
         }
+
+        public ProductItem Get_ProductDetail_By_Name(string productNameascii)
+        {
+            var product = LoadStoredProc("[dbo].[Get_ProductDetail_By_NameAscii]")
+                .WithSqlParam("@nameAscii", productNameascii)
+                .ExecuteStoredProc<ProductItem>();
+
+            return product.FirstOrDefault();
+        }
+
+        public IList<ProductItem> Get_Hot_Sale_Product()
+        {
+            var ListProductHot = LoadStoredProc("[dbo].[Get_Product_Hot_Sale]").ExecuteStoredProc<ProductItem>();
+
+            if (ListProductHot != null && ListProductHot.Count > 0)
+            {
+                foreach (var product in ListProductHot)
+                {
+                    var detail = GetProductDetailByID(product.ID);
+                    var listdetail = new List<ProductDetailItem>
+                    {
+                        detail.FirstOrDefault()
+                    };
+                    product.ProductDetails = listdetail;
+                }
+            }
+            return ListProductHot;
+        }
+
     }
 }

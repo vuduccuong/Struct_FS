@@ -36,3 +36,8 @@ D:\Accessories-CuongVD\Accessories\App.Web\obj\Debug\netcoreapp2.2\App.Web.Views
 D:\Accessories-CuongVD\Accessories\App.Web\obj\Debug\netcoreapp2.2\App.Web.csproj.CopyComplete
 D:\Accessories-CuongVD\Accessories\App.Web\obj\Debug\netcoreapp2.2\App.Web.dll
 D:\Accessories-CuongVD\Accessories\App.Web\obj\Debug\netcoreapp2.2\App.Web.pdb
+D:\Accessories-CuongVD\Accessories\App.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\MenuView\SubMenu.g.cshtml.cs
+D:\Accessories-CuongVD\Accessories\App.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\MenuView\ChildView.g.cshtml.cs
+D:\Accessories-CuongVD\Accessories\App.Web\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.g.cshtml.cs
+D:\Accessories-CuongVD\Accessories\App.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Products\HotSaleProduct.g.cshtml.cs
+D:\Accessories-CuongVD\Accessories\App.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutAdmin.g.cshtml.cs

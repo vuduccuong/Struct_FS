@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using App.Utils.Extensions
+@model IEnumerable<App.Model.Menu.MenuItem>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Dealers &mdash; Colorlib e-Commerce Template</title>
@@ -6,18 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="~/Front/fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="~/Front/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Front/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Front/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/Front/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Front/css/owl.theme.default.min.css">
 
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="~/Front/css/aos.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="~/Front/css/style.css">
 
 </head>
 <body>
@@ -38,32 +40,20 @@
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="logo">
                         <div class="site-logo">
-                            <a href="index.html" class="js-logo-clone">Dealers</a>
+                            <a href="/" class="js-logo-clone">BELLE</a>
                         </div>
                     </div>
                     <div class="main-nav d-none d-lg-block">
                         <nav class="site-navigation text-right text-md-center" role="navigation">
                             <ul class="site-menu js-clone-nav d-none d-lg-block">
-                                <li class="has-children active">
-                                    <a href="index.html">Collection</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Men</a></li>
-                                        <li><a href="#">Women</a></li>
-                                        <li><a href="#">Children</a></li>
-                                        <li class="has-children">
-                                            <a href="#">Sub Menu</a>
-                                            <ul class="dropdown">
-                                                <li><a href="#">Men</a></li>
-                                                <li><a href="#">Women</a></li>
-                                                <li><a href="#">Children</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
 
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="#">Catalogs</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                @foreach (var item in ViewBag.ListMenu)
+                                {
+                                    <li class="check-child">
+                                        <a href="@item.UrlString">@item.NameCategory</a>
+                                        @Html.Action("GetMenu", "Home", new { parentID = item.ID })
+                                    </li>
+                                }
                             </ul>
                         </nav>
                     </div>
@@ -158,14 +148,14 @@
         </footer>
     </div>
 
-    <script src="js/libs/jquery-3.3.1.min.js"></script>
-    <script src="js/libs/jquery-ui.js"></script>
-    <script src="js/libs/popper.min.js"></script>
-    <script src="js/libs/bootstrap.min.js"></script>
-    <script src="js/libs/owl.carousel.min.js"></script>
-    <script src="js/libs/jquery.magnific-popup.min.js"></script>
-    <script src="js/libs/aos.js"></script>
-    <script src="js/libs/main.js"></script>
+    <script src="~/Front/js/libs/jquery-3.3.1.min.js"></script>
+    <script src="~/Front/js/libs/jquery-ui.js"></script>
+    <script src="~/Front/js/libs/popper.min.js"></script>
+    <script src="~/Front/js/libs/bootstrap.min.js"></script>
+    <script src="~/Front/js/libs/owl.carousel.min.js"></script>
+    <script src="~/Front/js/libs/jquery.magnific-popup.min.js"></script>
+    <script src="~/Front/js/libs/aos.js"></script>
+    <script src="~/Front/js/libs/main.js"></script>
 
 </body>
 </html>

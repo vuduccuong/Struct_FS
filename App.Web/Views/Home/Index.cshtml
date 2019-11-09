@@ -1,32 +1,14 @@
-﻿@{
+﻿@using App.Utils.Extensions
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Home Page";
 }
 
-    <div class="site-blocks-cover aos-init aos-animate" data-aos="fade">
-        <div class="container">
-
-            <div class="row align-items-center">
-                <div class="col-lg-5 text-center">
-                    <div class="featured-hero-product w-100">
-                        <h1 class="mb-2">Belle</h1>
-                        <h4>Summer Collection</h4>
-                        <div class="price mt-3 mb-5"><strong>1,499</strong> <del>$1,999</del></div>
-                        <p><a style="cursor: pointer" toscroll="#st-product" class="btn btn-outline-primary rounded-0">Shop Now</a> <a href="#" class="btn btn-primary rounded-0">Shop Now</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-7 align-self-end text-center text-lg-right">
-                    <img src="images/new/person_transparent.png" alt="Image" class="img-fluid img-1">
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-    <div id="st-product">
-        ok man
-    </div>
+@Html.Action("Get_Hot_Sale_Product", "Home")
+<div id="st-product">
+    ok man
+</div>
 
 <!--Javascript-->
-<script src="js/libs/jquery-3.3.1.min.js"></script>
-<script src="~/js/controllers/indexController.js"></script>
+<script src="~/Front/js/libs/jquery-3.3.1.min.js"></script>
+<script src="~/Front/js/controllers/indexController.js"></script>
